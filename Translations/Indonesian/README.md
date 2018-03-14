@@ -235,6 +235,21 @@ setTimeout(function() {
 console.log('three');
 ```
 
+*Pertanyaan: Apakah perbedaan antara keempat pernyataan berikut ini?*
+```javascript
+doSomething().then(function () {
+  return doSomethingElse();
+});
+
+doSomething().then(function () {
+  doSomethingElse();
+});
+
+doSomething().then(doSomethingElse());
+
+doSomething().then(doSomethingElse);
+```
+
 #### Pertanyaan Seru / Sampingan:
 
 * Apa saja proyek menarik yang baru-baru ini Anda kerjakan?
